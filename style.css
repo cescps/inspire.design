@@ -9,6 +9,13 @@
   width: 500px; 
   border-radius: 8px; 
   object-fit: cover; 
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 700px) {
@@ -23,5 +30,4 @@
     height: 800px; 
     width: 800px; 
   }
-}
 }
