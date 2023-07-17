@@ -18,6 +18,11 @@
     height: 360px; 
     width: 360px; 
   }
+  
+  .center-container {
+  display: flex;
+  justify-content: center;
+}
 }
 
 @media screen and (min-width: 1024px) {
