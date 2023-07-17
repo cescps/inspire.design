@@ -2,3 +2,26 @@
   color:#fdba74
   
 }
+
+
+.custom-image {
+  height: 500px; /* Increase the height to 500px */
+  width: 500px; /* Increase the width to 500px */
+  border-radius: 8px; /* rounded-lg */
+  object-fit: cover; /* object-cover */
+}
+
+@media screen and (min-width: 640px) {
+  .custom-image {
+    height: 720px; /* sm:h-45 converted to 720px assuming base font size is 16px */
+    width: 720px; /* sm:w-45 converted to 720px assuming base font size is 16px */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .custom-image {
+    height: 800px; /* lg:h-30 converted to 800px assuming base font size is 16px */
+    width: 800px; /* w-30 converted to 800px assuming base font size is 16px */
+  }
+}
+}
