@@ -7,7 +7,7 @@
 .custom-image {
   height: 500px; 
   width: 500px; 
-  border-radius: 8px; 
+  border-radius: 15px; 
   object-fit: cover; 
 }
 
