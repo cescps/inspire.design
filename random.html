@@ -17,48 +17,22 @@
   <link rel="icon" type="image/png" href="round.png"/>
 
 <script>
-    const sections = [
-      {
-        id: 1,
-        content: document.querySelector('.first-section'),
-      },
-      {
-        id: 2,
-        content: document.querySelector('.second-section'),
-      },
-      {
-        id: 3,
-        content: document.querySelector('.third-section'),
-      },
-      {
-        id: 4,
-        content: document.querySelector('.fourth-section'),
-      },
-      {
-        id: 5,
-        content: document.querySelector('.fifth-section'),
-      },
-      {
-        id: 6,
-        content: document.querySelector('.sixth-section'),
-      },
-      {
-        id: 7,
-        content: document.querySelector('.seventh-section'),
-      },
-      {
-        id: 8,
-        content: document.querySelector('.eighth-section'),
-      },
-      {
-        id: 9,
-        content: document.querySelector('.ninth-section'),
-      },
-      {
-        id: 10,
-        content: document.querySelector('.tenth-section'),
-      },
-    ];
+
+  document.addEventListener("DOMContentLoaded", function () {
+      // Get all sections
+      const sections = document.querySelectorAll('.first-section, .second-section, .third-section .fourth-section .fifth-section .sixth-section .seventh-section .eighth-section .ninth-section');
+
+      // Hide all sections initially
+      sections.forEach(section => {
+        section.classList.add('hidden');
+      });
+
+      // Generate a random index to select a section
+      const randomIndex = Math.floor(Math.random() * sections.length);
+
+      // Show the randomly selected section by removing the "hidden" class
+      sections[randomIndex].classList.remove('hidden');
+    });
   </script>
 
 
